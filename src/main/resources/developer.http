@@ -1,0 +1,23 @@
+POST {{host}}/developer
+Content-Type: application/json
+
+{
+  "firstName": "Json",
+  "lastName": "Hal",
+  "job": {
+    "id": 1,
+    "title": "Full-Stack Engineer00",
+    "level": "ENTRY"
+  }
+}
+
+###
+GET {{host}}/developer/15
+Accept: application/hal+json;charset=utf8;
+
+###
+
+GET {{host}}/developer/
+Accept: application/hal+json;charset=utf8;
+
+###
